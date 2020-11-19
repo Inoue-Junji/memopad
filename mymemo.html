@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>myMemoPad中級</title>
+    <link rel="stylesheet" href="css/sample.css">
+</head>
+
+<body>
+    <header>
+        <h1>StopWatch</h1>
+    </header>
+
+    <main>
+        <input type="text" id="input">
+        <textarea id="text_area"></textarea>
+        <ul>
+            <li id="save">Save</li>
+            <li id="clear">Clear</li>
+        </ul>
+    </main>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        //$(function () {
+
+            //1.Save クリックイベント
+            //$('#save').on('click', function () {     // saveボタンクリックイベント
+                //const data = {
+                    //title: $('#input').val(),
+                    //text: $('#text_area').val(),
+                //};
+                //const jsonData = JSON.stringify(data);
+                //localStorage.setItem('memo', jsonData);  // localstorageに保存
+            //});
+
+
+            //2.clear クリックイベント
+            //$('#clear').on('click', function () {    // clearボタンクリックイベント
+                //localStorage.removeItem('memo');     // key名を指定して削除
+                //$('#text_area').val('');             // textareaを空文字で上書き
+
+            //})
+
+
+            //3.ページ読み込み：保存データ取得表示
+            //if (localStorage.getItem('memo')) {             // 値が保存されていれば
+                //const jsonData = localStorage.getItem('memo');  // データを取得
+                //const data = JSON.parse(jsonData);
+                //$('#input').val(data.title);
+                //$('#text_area').val(data.text);
+            //}
+
+
+
+        //});
+
+    </script>
+
+    <script src="main.js"></script>
+    <div id="display">00:00:00</div>
+    <div class="buttons">
+        <button id="startStop">START</button>
+        <button id="reset">RESET</button>
+    </div>
+
+
+
+
+
+
+    <footer>
+        <small>G's</small>
+    </footer>
+
+</body>
+
+</html>
